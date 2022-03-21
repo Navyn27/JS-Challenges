@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./guess.css" />
+    <title>Guess my Number</title>
+  </head>
+  <body id="body">
+    <header>
+      <button id="replay">Re-play</button>
+      <p id="head">Guess a number between(0 included)</p>
+    </header>
+    <div id="enter">
+      <hr id="first" />
+      <input id="guess" type="text" name="guess" />
+      <hr id="last" />
+    </div>
+    <div id="info">
+      <button id="check" onclick="getValue()">Check</button>
+      <div id="messages">
+        <p id="info_m">Enter your guess</p>
+        <p id="score_m">
+          Score :
+          <span id="score_l"></span>
+        </p>
+        <p id="highscore_m">
+          Highscore :
+          <span id="highscore_l"></span>
+        </p>
+      </div>
+    </div>
+    <div id="loss">
+      <p>!!OOPS!!</p>
+      <p>You lost</p>
+    </div>
+  </body>
+  <script src="guess.js"></script>
+</html>
